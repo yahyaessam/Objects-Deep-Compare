@@ -1,6 +1,6 @@
 # Objects-Deep-Compare
 
-## using recursive function
+## Using recursive function
 
 ```javascript
 const person1 = {
