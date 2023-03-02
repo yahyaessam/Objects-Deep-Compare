@@ -18,7 +18,7 @@ const person2 = {
     "age": 35,
 };
  
-const isDeepCompare = (object1, object2) => {
+const isDeepEqual = (object1, object2) => {
 
   const objKeys1 = Object.keys(object1);
   const objKeys2 = Object.keys(object2);
@@ -31,7 +31,7 @@ const isDeepCompare = (object1, object2) => {
 
     const isObjects = isObject(value1) && isObject(value2);
 
-    if ((isObjects && !isDeepCompare(value1, value2)) ||
+    if ((isObjects && !isDeepEqual(value1, value2)) ||
       (!isObjects && value1 !== value2)
     ) {
       return false;
