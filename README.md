@@ -53,3 +53,10 @@ console.log(isDeepEqual(person1, person2)); //true
 
 
 ```
+# Generate Random Int Between Min and Max
+
+```javascript
+function GenRandomIntBetween(min,max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+```
